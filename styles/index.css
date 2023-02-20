@@ -1,78 +1,85 @@
 .container{
     display: grid;
     gap: 20px;
-    padding: 20px;
-    width: 1440px;
-    height: 900px;
-    background: #FFFFFF;
+    padding: 30px;
+    background: white;
     grid-template-areas:
-          '1  1  2  2  3  3'
-          '1  1  2  2  4  4'
-          '5  5  2  2  6  6';
+        'a a b b c c'
+        'a a b b c c'
+        'a a b b e e'
+        'd d b b e e'
+        'd d b b f f'
+        'd d b b f f'
+        'g g h i i j'
+        'g g k i i j'
+        'l l l l l l';
 }
+
+.container > div {
+    padding: 40px;
+}
+
 .box1{
-    grid-area: 1;
-    padding: 20px;
+    grid-area: a;
     background: #007F5F;
 }
+
 .box2{
-    grid-area: 2;
-    padding: 20px;
+    grid-area: b;
     background: #80B918;
 }
+
 .box3{
-    grid-area: 3;
-    padding: 20px;
-    background-color: #DDDF00;;
+    grid-area: c;
+    background-color: #DDDF00;
 }
+
 .box4{
-    grid-area: 4;
-    padding: 20px;
+    grid-area: d;
     background:#2B9348;
 }
+
 .box5{
-    grid-area: 5;
-    padding: 20px;
-    background: #EEEF20;;
+    grid-area: e;
+    background: #EEEF20;
 }
+
 .box6{
-    grid-area: 6;
-    padding: 20px;
-    background: #FFFF3F;;
+    grid-area: f;
+    background: #FFFF3F;
 }
+
 .box7{
-    grid-area: 7;
-    padding: 20px;
-    background:  #55A630;;
+    grid-area: g;
+    background:  #55A630;
 }
+
 .box8{
-    grid-area: 8;
-    padding: 20px;
+    grid-area: h;
     background:  #AACC00;
 }
+
 .box9{
-    grid-area: 9;
-    padding: 20px;
+    grid-area: i;
     background:  #D4D700;
 }
+
 .box10{
-    grid-area: 10;
-    padding: 20px;
+    grid-area: j;
     background:  #007F5F;
 }
+
 .box11{
-    grid-area: 11;
-    padding: 20px;
+    grid-area: k;
     background:   #007F5F;
 }
+
 .box12{
-    grid-area: 12;
-    padding: 20px;
+    grid-area: l;
     background:   #9BC1BC;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 78px;
-    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
 }
